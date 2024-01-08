@@ -1,0 +1,38 @@
+:root {
+    --primary: #E8E8E8;
+    --secondary:#999797 ;
+  }
+  
+  /* Scrollbar styles */
+  
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--secondary);
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--primary);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+  /*   background: repeating-linear-gradient(
+      45deg,
+      var(--secondary),
+      var(--secondary) 5px,
+      var(--primary) 5px,
+      var(--primary) 10px
+    ); */
+    box-shadow: -1px 0px 0px 0px #F0F0F0 inset;
+    box-shadow: 1px 0px 0px 0px #E8E8E8 inset;
+
+    border-radius: 20px;
+    border: 3px solid var(--primary);
+  }
+
